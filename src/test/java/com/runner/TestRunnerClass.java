@@ -9,7 +9,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features="src\\test\\resources\\Features", glue={"com.stepdefinition"}, 
-monochrome=true,strict=true, plugin={"json:target\\cucumber.json","html:target"})
+monochrome=true,strict=true, plugin={"json:src\\test\\resources\\Repo\\jsonRep.json","html:target"})
 public class TestRunnerClass extends Base {
 	@AfterClass
 	public static void afterClass() {
